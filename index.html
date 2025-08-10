@@ -6,6 +6,7 @@
     <meta name="description" content="Portfolio of a C++/C# Developer">
     <title>Patryk Jasiak - C++/C# Developer</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
     <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -15,7 +16,10 @@
 <header>
     <nav>
         <h1 data-lang="name">Patryk Jasiak</h1>
-        <ul>
+        <button id="nav-toggle" aria-label="Toggle menu">
+            &#9776;  <!-- Hamburger icon -->
+        </button>
+        <ul id="nav-links">
             <li><a href="#about" data-lang="menuAbout">About</a></li>
             <li><a href="#projects" data-lang="menuProjects">Projects</a></li>
             <li><a href="#skills" data-lang="menuSkills">Skills</a></li>
@@ -88,7 +92,7 @@
 
 <section id="skills">
     <h2 data-lang="skillsTitle">Skills</h2>
-    <ul class="skills-list">
+    <div class="skills-list">
         <div class="skill">C</div>
         <div class="skill">C++</div>
         <div class="skill">Embedded C/C++ (mostly stm32)</div>
@@ -99,7 +103,7 @@
         <div class="skill">Godot Game Development</div>
         <div class="skill">Version Control (Git)</div>
         <div class="skill">SQL / SQLite</div>
-    </ul>
+    </div>
 </section>
 
 <section id="contact">

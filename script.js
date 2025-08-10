@@ -18,3 +18,10 @@ document.addEventListener("keydown", (e) => {
         closeLightbox();
     }
 });
+
+const navToggle = document.getElementById('nav-toggle');
+const navLinks = document.getElementById('nav-links');
+
+navToggle.addEventListener('click', () => {
+  navLinks.classList.toggle('show');
+});
