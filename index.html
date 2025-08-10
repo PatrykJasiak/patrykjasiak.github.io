@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of a C++/C# Developer">
+    <title>Patryk Jasiak - C++/C# Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+</head>
+<body>
+<header>
+    <nav>
+        <h1 data-lang="name">Patryk Jasiak</h1>
+        <ul>
+            <li><a href="#about" data-lang="menuAbout">About</a></li>
+            <li><a href="#projects" data-lang="menuProjects">Projects</a></li>
+            <li><a href="#skills" data-lang="menuSkills">Skills</a></li>
+            <li><a href="#contact" data-lang="menuContact">Contact</a></li>
+        </ul>
+        <button id="lang-toggle">PL</button>
+    </nav>
+</header>
+
+<section id="about">
+    <div class="about-header">
+        <img src="assets/profile.jpg" alt="Profile Picture" class="profile-pic" />
+        <h2>About Me</h2>
+    </div>
+    <p data-lang="aboutText">
+        I’m a C++ and C# developer with a focus on building high-performance applications,
+        game engines, and desktop software. I enjoy solving complex problems and creating
+        efficient solutions.
+    </p>
+</section>
+
+<section id="projects">
+    <h2 data-lang="projectsTitle">Projects</h2>
+    <div class="project-card">
+    <div class="project-title">
+        <img src="assets/simply_ants/logo.png" alt="Logo" class="project-logo">
+        <h3 data-lang="proj1Title">Simply ants</h3>
+    </div>
+        <div class="project-images">
+            <a href="#img-lightbox" onclick="openLightbox('assets/simply_ants/phone_ss1.png')">
+                <img src="assets/simply_ants/phone_ss1.png" alt="Project 1 Screenshot">
+            </a>
+            <a href="#img-lightbox" onclick="openLightbox('assets/simply_ants/desktop_ss1.png')">
+                <img src="assets/simply_ants/desktop_ss1.png" alt="Project 1 Screenshot 2">
+            </a>
+        </div>
+        <p data-lang="proj1Desc">Game about building your own ants colony. Made in Unity.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.Lagers.SimpleAnts&hl=en" target="_blank" data-lang="viewGooglePlay">View on Google Play</a></p>
+        <p><a href="https://lagersstudio.itch.io/simplyants" target="_blank" data-lang="viewItchIo">View on Itch.io</a></p>
+    </div>
+    <div class="project-card">
+        <h3 data-lang="proj2Title">Turn base roguelike</h3>
+        <img src="assets/project2.png" alt="Project 2 Screenshot">
+        <p data-lang="proj2Desc">Rouglike game about creating an army and fighting ai opponents.</p>
+    </div>
+    <div class="project-card">
+        <h3 data-lang="proj3Title">Image analysis - automatic jigsaw puzzle solver</h3>
+        <div class="project-images">
+            <a href="#img-lightbox" onclick="openLightbox('assets/puzzle_master/start_image.jpg')">
+                <img src="assets/puzzle_master/start_image.jpg" alt="Project 3 Screenshot 1">
+            </a>
+            <a href="#img-lightbox" onclick="openLightbox('assets/puzzle_master/puzzle_mask.png')">
+                <img src="assets/puzzle_master/puzzle_mask.png" alt="Project 3 Screenshot 2">
+            </a>
+            <a href="#img-lightbox" onclick="openLightbox('assets/puzzle_master/solution.png')">
+                <img src="assets/puzzle_master/solution.png" alt="Project 3 Screenshot 3">
+            </a>
+        </div>
+        <p data-lang="proj3Desc">An application for automatic detection of jigsaw puzzle pieces in an image and creating image with the solution.</p>
+        <object data="assets/puzzle_master/thesis.pdf" type="application/pdf" width="100%" height="600px">
+            <p>Your browser does not support PDFs.
+        </object>
+        <p>
+            <a data-lang="viewThesis" href="assets/puzzle_master/thesis.pdf" target="_blank" rel="noopener noreferrer">
+                View master thesis
+            </a>
+        </p>
+    </div>
+</section>
+
+<section id="skills">
+    <h2 data-lang="skillsTitle">Skills</h2>
+    <ul class="skills-list">
+        <div class="skill">C</div>
+        <div class="skill">C++</div>
+        <div class="skill">Embedded C/C++ (mostly stm32)</div>
+        <div class="skill">C#</div>
+        <div class="skill">Python</div>
+        <div class="skill">Java</div>
+        <div class="skill">Unity Game Development</div>
+        <div class="skill">Godot Game Development</div>
+        <div class="skill">Version Control (Git)</div>
+        <div class="skill">SQL / SQLite</div>
+    </ul>
+</section>
+
+<section id="contact">
+    <h2 data-lang="contactTitle">Contact</h2>
+    <div id="contacts-container">
+        <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <p>Email: <a href="mailto:patrykjasiak12@gmail.com">patrykjasiak12@gmail.com</a></p>
+        </div>
+        <div class="contact-item">
+            <i class="fa-brands fa-github"></i>
+            <p>GitHub: <a href="https://github.com/PatrykJasiak">https://github.com/PatrykJasiak</a></p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Patryk Jasiak. Hosted on GitHub Pages.</p>
+</footer>
+
+<div id="img-lightbox">
+    <span class="close-btn">&times;</span>
+    <img id="lightbox-img" src="" alt="Full Size">
+</div>
+
+<script src="script.js"></script>
+<script src="translation.js"></script>
+
+</body>
+</html>

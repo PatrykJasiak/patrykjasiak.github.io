@@ -1,0 +1,219 @@
+html {
+  font-size: 18px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #121212;
+    color: #e0e0e0;
+}
+
+header {
+    background: #1f1f1f;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+}
+
+a {
+    color: #00b4d8;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    color: #00b4d8;
+    text-decoration: none;
+}
+
+.about-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* space between image and title */
+  margin-bottom: 1rem;
+}
+
+.profile-pic {
+  width: 100px;   /* adjust size as needed */
+  height: 100px;
+  border-radius: 40%;  /* make it circular */
+  object-position: center 30%;  /* shift image up */
+  object-fit: cover;
+  border: 2px solid white; /* optional border */
+}
+
+.profile-img {
+    width: 150px;
+    border-radius: 50%;
+    margin: 1rem 0;
+}
+
+section {
+    padding: 2rem;
+}
+
+#projects {
+    display: block;
+}
+
+.project-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* space between logo and text */
+    margin-top: 0.5rem;
+}
+
+.project-logo {
+    border-radius: 20%;
+    width: 75px;
+    height: 75px;
+    max-width: 75px;
+    max-height: 75px;
+    object-fit: contain;
+    display: block; /* ensures sizing applies properly */
+}
+
+.project-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: flex-start;
+}
+
+.project-images img {
+    max-height: 200px;
+    object-fit: contain;
+    display: block;
+    cursor: pointer;
+}
+
+.project-card {
+    background: #1f1f1f;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+}
+
+.project-card img {
+    max-height: 200px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 1px;
+}
+
+.skills-list {
+  background-color: #2c2c2c; /* example lighter dark color */
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+display: grid;
+  grid-template-columns: repeat(3, 1fr); /* exactly 3 columns */
+  gap: 1rem; /* spacing between skill items */
+}
+
+.skill {
+  background-color: #444; /* slightly lighter than section bg */
+  padding: 0.8rem 1rem;
+  border-radius: 6px;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #1f1f1f;
+    margin-top: 2rem;
+}
+#lang-toggle {
+    background: #00b4d8;
+    color: white;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#img-lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+#img-lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 6px;
+}
+
+#img-lightbox .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+#contacts {
+  background-color: #2c2c2c;  /* same light background as skills/projects */
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+#contacts-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 3 items per row */
+  gap: 1rem;
+}
+
+.contact-item {
+  background-color: #444;  /* slightly lighter than section bg */
+  padding: 0.8rem 1rem;
+  border-radius: 6px;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  /* optional: add hover effect */
+  transition: background-color 0.3s;
+}
+
+.contact-item i {
+  margin-right: 0.5rem;
+  color: white;
+  font-size: 3rem;
+  vertical-align: middle;
+}
