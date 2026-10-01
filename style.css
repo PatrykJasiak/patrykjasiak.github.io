@@ -240,3 +240,46 @@ nav {
   margin: 0;
   padding: 0;
 }
+/* --- Sekcja umiejętności z wypełnieniem procentowym --- */
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 w rzędzie */
+    gap: 15px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.skill {
+    /* Wypełnienie: od 0% do --progress niebieski (#007bff), od --progress do 100% ciemnoszary (#424242) */
+    background: linear-gradient(90deg, #007bff var(--progress, 0%), #424242 var(--progress, 0%));
+    color: #ffffff;
+    padding: 14px 20px;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: 600;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Subtelny efekt po najechaniu myszką */
+.skill:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsywność */
+@media (max-width: 900px) {
+    .skills-list {
+        grid-template-columns: repeat(2, 1fr); /* 2 w rzędzie na tabletach */
+    }
+}
+
+@media (max-width: 600px) {
+    .skills-list {
+        grid-template-columns: 1fr; /* 1 w rzędzie na telefonach */
+    }
+}
