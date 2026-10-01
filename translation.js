@@ -59,7 +59,7 @@ const translations = {
     }
 };
 
-let currentLang = "en";
+let currentLang = "pl";
 
 document.getElementById("lang-toggle").addEventListener("click", () => {
     currentLang = currentLang === "en" ? "pl" : "en";
