@@ -26,6 +26,7 @@ const translations = {
         proj3Desc2_State3: "Finding the correct solution.",
         proj3Desc3: "This application was created as a part of my master's thesis.",
         viewThesis: "View master's thesis",
+        EmbeddedC: "Embedded C/C++ (mostly stm32)",
     },
     pl: {
         name: "Patryk Jasiak",
@@ -45,6 +46,7 @@ const translations = {
         contactTitle: "Kontakt",
         githubLabel: "GitHub:",
         viewGooglePlay: "Zobacz na Google Play",
+        EmbeddedC: "Systemy wbudowane C/C++ (głownie STM32)",
         viewItchIo: "Zobacz na Itch.io",
         proj3Title: "Analiza obrazu - automatyczne układanie puzzli",
         proj3Desc: "Program do automatycznego układania puzzli na zdjęciu.",
